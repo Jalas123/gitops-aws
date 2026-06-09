@@ -1,0 +1,25 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# tfvars may hold sensitive data. Yours only has the repo name, so if you
+# want it tracked, run: git add -f infra/terraform.tfvars
+*.tfvars
+*.tfvars.json
+
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# NOTE: .terraform.lock.hcl is intentionally NOT ignored — commit it so
+# provider versions are reproducible.
+
+# Go
+*.exe
+/app/app
